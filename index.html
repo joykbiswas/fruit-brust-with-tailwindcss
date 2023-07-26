@@ -36,7 +36,7 @@
 <body>
     <header class="container m-auto ">
         <!-- navbar section -->
-        <div class="my-5 py-4 pl-14  mx-4 md:mx-8  bg-[#F85559] text-white rounded-3xl">
+        <div class="my-5 py-2 md:py-3 pl-14  mx-4 md:mx-8  bg-[#F85559] text-white rounded-3xl">
             <nav class="flex justify-between items-center">
                 <div class="hidden lg:flex lg:space-x-7 lg:text-lg ">
                     <h3>Home</h3>
@@ -66,8 +66,8 @@
         </div>
 
         <!-- hero section --> 
-      <div class="">
-        <div class="mx-6 my-5  md:mx-16 md:my-18 m-auto relative ">
+      <div class="lg:w-full m-auto">
+        <div class=" mx-6   md:mx-16  m-auto relative ">
             <div class=" carousel w-full  ">
                 <!-- slide 1 -->
                <div id="slide1" class="carousel-item relative w-full ">
@@ -169,10 +169,196 @@
       </div>
     </header>
 
-   
+   <main>
+   <!-- deal of the day -->
+    <section class="w-4/5 m-auto my-12 md:my-24 ">
 
-      
-  
-    
+     <div class=" text-center lg:flex gap-x-24 lg:text-left">
+      <div class="space-y-3 py-5 ">
+        <h1 class="text-3xl font-semibold">Deal of the day</h1>
+        <p class="text-slate-700">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+      <!-- dead line -->
+      <div class="w-4/5 m-auto pl-7 ">
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-3xl md:text-5xl">
+              <span style="--value:15;"></span>:
+            </span>
+            days
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-3xl md:text-5xl">
+              <span style="--value:10;"></span>:
+            </span>
+            hours
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-3xl md:text-5xl">
+              <span style="--value:24;"></span>:
+            </span>
+            min
+          </div> 
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-3xl md:text-5xl">
+              <span style="--value:41;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!-- deal card  -->
+     <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 my-6"> 
+      <!-- first card -->
+      <div class=" py-2 justify-center rounded border border-slate-400 border-solid shadow-lg">
+         <div class="text-center ">
+          <img class="w-20 m-auto" src="./images/fruit6.png" alt="">
+          <h5 class="text-xl">12.90$ - 18.85$</h5>
+          <hr class="mx-7">
+          <p class="text-slate-600">Apples</p>
+          <!-- rating  -->
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div> <br>
+          <!-- Open the modal using ID.showModal() method -->
+           <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200" onclick="my_modal_1.showModal()">Details</button>
+           <dialog id="my_modal_1" class="modal">
+           <form method="dialog" class="modal-box">
+            <img class="w-24 m-auto" src="./images/fruit6.png" alt="">
+           <h3 class="font-bold text-lg">Apples</h3>
+           <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+           <div class="modal-action">
+           <!-- if there is a button in form, it will close the modal -->
+           <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200">Close</button>
+           <button class="px-4 py-3 text-white bg-rose-400 rounded border border-solid hover:bg-rose-600">Buy Now</button>
+           </div>
+          </form>
+          </dialog>
+         </div>
+      </div>
+
+       <!-- second card -->
+       <div class=" py-2 justify-center rounded border border-slate-400 border-solid shadow-lg">
+        <div class="text-center ">
+         <img class="w-24 m-auto" src="./images/fruit7.png" alt="">
+         <h5 class="text-xl">12.90$ - 18.85$</h5>
+         <hr class="mx-6">
+         <p class="text-slate-600">Orange</p>
+         <!-- rating  -->
+         <div class="rating">
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+         </div> <br>
+         <!-- Open the modal using ID.showModal() method -->
+          <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200" onclick="my_modal_2.showModal()">Details</button>
+          <dialog id="my_modal_2" class="modal">
+          <form method="dialog" class="modal-box">
+           <img class="w-24 m-auto" src="./images/fruit7.png" alt="">
+          <h3 class="font-bold text-lg">Orange</h3>
+          <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          <div class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200">Close</button>
+          <button class="px-4 py-3 text-white bg-rose-400 rounded border border-solid hover:bg-rose-600">Buy Now</button>
+          </div>
+         </form>
+         </dialog>
+        </div>
+     </div>
+       <!-- third card -->
+       <div class=" py-2 justify-center rounded border border-slate-400 border-solid shadow-lg">
+        <div class="text-center ">
+         <img class="w-24 m-auto" src="./images/fruit8.png" alt="">
+         <h5 class="text-xl">12.90$ - 18.85$</h5>
+         <hr class="mx-6">
+         <p class="text-slate-600">Red Dragon</p>
+         <!-- rating  -->
+         <div class="rating">
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+         </div> <br>
+         <!-- Open the modal using ID.showModal() method -->
+          <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200" onclick="my_modal_3.showModal()">Details</button>
+          <dialog id="my_modal_3" class="modal">
+          <form method="dialog" class="modal-box">
+           <img class="w-24 m-auto" src="./images/fruit8.png" alt="">
+          <h3 class="font-bold text-lg">Red Dragon</h3>
+          <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          <div class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200">Close</button>
+          <button class="px-4 py-3 text-white bg-rose-400 rounded border border-solid hover:bg-rose-600">Buy Now</button>
+          </div>
+         </form>
+         </dialog>
+        </div>
+     </div>
+       <!-- four card -->
+       <div class=" py-2 justify-center rounded border border-slate-400 border-solid shadow-lg">
+        <div class="text-center ">
+         <img class="w-24 m-auto" src="./images/fruit9.png" alt="">
+         <h5 class="text-xl">12.90$ - 18.85$</h5>
+         <hr class="mx-6">
+         <p class="text-slate-600">Banana</p>
+         <!-- rating  -->
+         <div class="rating">
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+           <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+         </div> <br>
+         <!-- Open the modal using ID.showModal() method -->
+          <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200" onclick="my_modal_4.showModal()">Details</button>
+          <dialog id="my_modal_4" class="modal">
+          <form method="dialog" class="modal-box">
+           <img class="w-24 m-auto" src="./images/fruit9.png" alt="">
+          <h3 class="font-bold text-lg">Banana</h3>
+          <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          <div class="modal-action">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="px-4 py-3 text-red-500 rounded border border-solid hover:bg-gray-200">Close</button>
+          <button class="px-4 py-3 text-white bg-rose-400 rounded border border-solid hover:bg-rose-600">Buy Now</button>
+          </div>
+         </form>
+         </dialog>
+        </div>
+     </div>
+
+
+     </div>
+      <div class="text-center">
+        <button class="px-4 py-3 text-white bg-rose-400 rounded border border-solid hover:bg-rose-600 ">Shop All</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="w-4/5 m-auto">
+        <div class="hero min-h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="text-xl md:mb-5 md:text-5xl font-bold">Meet the team section</h1>
+              <p class="md:mb-5 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   </main>
+ 
 </body>
 </html>
