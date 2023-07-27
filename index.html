@@ -36,25 +36,25 @@
 <body>
     <header class="container m-auto ">
         <!-- navbar section -->
-        <div class="my-5 py-2 md:py-3 pl-14  mx-4 md:mx-8  bg-[#F85559] text-white rounded-3xl">
+        <div class="my-5 py-2 md:py-3 pl-10  mx-4 md:mx-8  bg-[#F85559] text-white rounded-3xl">
             <nav class="flex justify-between items-center">
-                <div class="hidden lg:flex lg:space-x-7 lg:text-lg ">
+                <div class="hidden lg:flex lg:space-x-6 lg:text-lg ">
                     <h3>Home</h3>
                     <h3>About Us</h3>
                     <h3>Shop</h3>
                     <h3>All Fruits</h3>
                 </div>
     
-                <div class="flex items-center  md:justify-between md:gap-10 lg:gap-20 ">
+                <div class="flex items-center md:justify-between md:gap-10 lg:gap-20 md:pr-5">
                     <!-- nav title -->
-                    <div class="flex space-x-2 lg:pr-2 xl:pr-24 items-center">
+                    <div class="flex space-x-2 pr-5 xl:pr-24 items-center">
                         <img src="./images/logo.png" alt="">
                         <h1 class="text-2xl md:text-4xl">Fruit Burst</h1>                 
                     </div>
                     <div class=" hidden md:block md:pr-5">
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs rounded-3xl" />
+                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs rounded-3xl focus:" />
                     </div>
-                    <div class=" pl-9 pr-2 lg:hidden ">
+                    <div class="pl-14 md:pl-6 r-2 lg:hidden ">
                         <label class="btn btn-circle swap swap-rotate">
                             <!-- hamburger icon -->
                             <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
@@ -424,7 +424,7 @@
           <!-- left choose section -->
           <div class="text-center lg:text-left px-14 lg:px-2 ">
             <div class="mt-3 lg:flex lg:justify-start">
-            <img class="m-auto pr-2" src="./images/icon/group 1.svg" alt="">
+            <img class="m-auto pr-2 bg-slate-300 rounded-full p-2" src="./images/icon/group 1.svg" alt="">
             <div>
               <h3 class="text-2xl">Dedicated Team</h3>
               <hr class="mx-10 mb-2">
@@ -433,7 +433,7 @@
             </div>
 
             <div class="mt-3 lg:flex lg:justify-start">
-            <img class="m-auto pr-2" src="./images/icon/love2.svg" alt="">
+            <img class="m-auto pr-2 bg-slate-300 rounded-full p-2" src="./images/icon/love2.svg" alt="">
             <div>
               <h3 class="text-2xl">Fresh is Best</h3>
               <hr class="mx-10 mb-2">
@@ -442,7 +442,7 @@
             </div>
 
             <div class="mt-3 lg:flex lg:justify-start">
-            <img class="m-auto pr-2" src="./images/icon/gift-box3.svg" alt="">
+            <img class="m-auto pr-2 bg-slate-300 rounded-full p-2" src="./images/icon/gift-box3.svg" alt="">
             <div>
               <h3 class="text-2xl">Gift Certificates</h3>
               <hr class="mx-10 mb-2">
@@ -456,9 +456,7 @@
        <!-- right choose section -->
        <div class="text-center  px-14  lg:px-2 lg:text-right">
          <div class="mt-3 lg:flex lg:flex-row-reverse ">
-          <div class="justify-center bg-yellow-300">
-            <img class="text-center m-auto ml-2 border border-red-500 border-solid " src="./images/icon/fruit4.svg" alt="">
-          </div>
+          <img class=" m-auto lg:ml-2 bg-slate-300 rounded-full p-2" src="./images/icon/fruit4.svg" alt="">
           <div class="">
             <h3 class="text-2xl">Integrated Supplier</h3>
             <hr class="mx-10 mb-2 lg:ml-10">
@@ -466,21 +464,17 @@
           </div>      
           </div>
 
-         <div class="mt-3 lg:flex lg:flex-row-reverse ">
-          <div>
-            <img class="m-auto ml-2" src="./images/icon/ice-cream5.svg" alt="">
-          </div>
+         <div class="mt-3 justify-center lg:flex lg:flex-row-reverse  ">
+          <img class="m-auto lg:ml-2 bg-slate-300 rounded-full p-2" src="./images/icon/ice-cream5.svg" alt="">
           <div>
             <h3 class="text-2xl">Sustainable Practice</h3>
             <hr class="mx-10 mb-2">
           <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>         
           </div>
-          
-          </div>
+
          <div class="mt-3 lg:flex lg:flex-row-reverse ">
-         <div>
-          <img class="m-auto ml-2" src="./images/icon/like6.svg" alt="">
-         </div>
+          <img class="m-auto lg:ml-2 bg-slate-300 rounded-full p-2 " src="./images/icon/like6.svg" alt="">
           <div>
             <h3 class="text-2xl">The Benefits Only</h3>
             <hr class="mx-10 mb-2 ">
@@ -493,10 +487,32 @@
        </div>
 
     </section>
-    <section class="my-24 w-4/5 m-auto bg-red-400 ">
-      
-    </section>
    </main>
+   <footer class="w-full m-auto mt-6 py-14 space-y-7 bg-black text-white justify-center">
+      <div class="  justify-center   ">
+        <div class="flex space-x-2 items-center justify-center ">
+          <img src="./images/logo.png" alt="">
+          <h1 class="text-2xl md:text-4xl">Fruit Burst</h1>                 
+      </div>
+      </div>
+
+      <div class="w-4/5 justify-center space-x-8 m-auto  flex flex-wrap  ">
+        <h5 class="mb-2">Home</h5>
+        <h5 class="mb-2" >About Us</h5>
+        <h5 class="mb-2">Shop</h5>
+        <h5 class="mb-2">All Fruits</h5>
+        <h5 class="mb-2">Support</h5>
+        <h5 class="mb-2">My Account</h5>
+      </div>
+      <div class="space-x-8 text-center">
+        <span><i class="fa-brands fa-facebook rounded-full" style="color: #394bf4; background:#f7f9fb;"></i></span>
+        <span><i class="fa-brands fa-youtube h-2" style="color: #f5f7f9;"></i></span>
+        <span><i class="fa-brands fa-twitter" style="color: #c1c1fe;"></i></span>
+        <span><i class="fa-brands fa-instagram" style="color: #de184d;"></i></span>
+        <span><i class="fa-brands fa-apple" style="color: #f3397b;"></i></span>
+        <span><i class="fa-brands fa-linkedin" style="color: #f9fafa;"></i></span>
+      </div>
+   </footer>
  
 </body>
 </html>
